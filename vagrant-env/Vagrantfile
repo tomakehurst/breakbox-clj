@@ -1,0 +1,25 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+
+    (1..2).each do |n|
+        name = "node#{n}"
+        config.vm.define name do |host|
+            host.vm.hostname = name
+            host.vm.box = "centos63min"
+
+            host.vm.network :private_network, ip: "192.168.2.1#{n}"
+
+            host.vm.synced_folder "../target", "/usr/lib/breakbox"
+
+            host.vm.provider :virtualbox do |vb|
+                vb.customize ["modifyvm", :id, "--memory", "256"]
+            end
+
+            host.vm.provision "shell", path: "provision.sh"
+        end
+    end
+end

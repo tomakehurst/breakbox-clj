@@ -1,0 +1,10 @@
+{
+    "name": "throttle-client",
+    "direction": "OUT",
+    "to": "some.otherservice.com",
+    "toPort": 443,
+    "fault": {
+        "type": "FIXED_DELAY",
+        "delayMillis": 100
+    }
+}
