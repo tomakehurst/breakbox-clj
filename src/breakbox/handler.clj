@@ -1,4 +1,4 @@
-(ns breakbox-clj.handler
+(ns breakbox.handler
   (:use compojure.core)
   (:require [compojure.handler :as handler]
             [compojure.route :as route]))

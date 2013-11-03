@@ -1,7 +1,7 @@
-(ns breakbox-clj.test.handler
+(ns breakbox.test.handler
   (:use clojure.test
         ring.mock.request  
-        breakbox-clj.handler))
+        breakbox.handler))
 
 (deftest test-app
   (testing "main route"
