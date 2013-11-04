@@ -24,3 +24,6 @@ pom.xml
 .lein-env
 
 **/.vagrant
+
+.lein-repl-history
+.nrepl-port

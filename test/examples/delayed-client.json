@@ -1,0 +1,8 @@
+{
+    "name": "throttle-client",
+    "type": "FIXED_DELAY",
+    "direction": "OUT",
+    "to": "some.otherservice.com",
+    "to-port": 443,
+    "delay-millis": 100
+}

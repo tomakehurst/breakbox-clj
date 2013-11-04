@@ -1,9 +1,0 @@
-{
-    "name": "isolate-web-server",
-    "direction": "IN",
-    "from": "*",
-    "toPort": 80,
-    "fault": {
-        "type": "DROP"
-    }
-}

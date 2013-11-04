@@ -1,0 +1,7 @@
+{
+    "name": "isolate-web-server",
+    "type": "NETWORK_FAILURE",
+    "direction": "IN",
+    "from": "ALL",
+    "to-port": 80
+}
